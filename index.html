@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - EBAC</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            height: 100vh;
+            background-color: #f3efef;
+            padding-top: 73px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Landing Page</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre nós</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown p-3">
+                        <button class="btn btn-warning" type="button">Checar Promoções</button>
+                        <button type="button" class="btn btn-success ms-1" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Login</button>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split ms-1" data-bs-toggle="dropdown">
+                                Cadastre-se
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li >
+                                    <button data-bs-toggle="modal" data-bs-target="#exemplo-modal2" type="button" class="dropdown-item">Cidadão</a>
+                                </li>
+                                <li >
+                                    <button data-bs-toggle="modal" data-bs-target="#exemplo-modal2" type="button" class="dropdown-item">Empresa</a>
+                                </li>
+                                <li >
+                                    <button data-bs-toggle="modal" data-bs-target="#exemplo-modal2" type="button" class="dropdown-item">Funcionário</a>
+                                </li>
+                            </ul>
+                        </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <section id="inicio">
+                <div class="container">
+                    <div id="carousel-exemplo" class="carousel carousel-fade-slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div data-bs-interval="3000" class="carousel-item active">
+                                <img class="d-block w-100 h-100 opacity-75" src="https://cdn.pixabay.com/photo/2023/04/10/10/30/keyboard-7913431_960_720.jpg">
+                                <div class="carousel-caption">
+                                    <h2>Teclado Gamer</h2>
+                                </div>
+                            </div>
+                            <div data-bs-interval="3000" class="carousel-item">
+                                <img class="d-block w-100 h-100 opacity-75" src="https://cdn.pixabay.com/photo/2023/04/18/18/38/atv-7935771_960_720.jpg">
+                                <div class="carousel-caption">
+                                    <h2>MotoCross</h2>
+                                </div>
+                            </div>
+                            <div data-bs-interval="3000" class="carousel-item">
+                                <img class="d-block w-100 h-100 opacity-75" src="https://cdn.pixabay.com/photo/2023/04/14/12/38/bird-7924990_960_720.jpg">
+                                <div class="carousel-caption">
+                                    <h2>Ave Bonita</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="sobre">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="mt-5 text-center">Sobre nós</h2>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Imagem do card">
+                                <div class="card-body">
+                                <h4 class="card-title">Quem somos?</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repudiandae dignissimos ea nulla cum saepe nesciunt beatae excepturi eum tenetur, sequi id pariatur impedit quidem quo, aliquam minus delectus eligendi?</p>
+                                </div>
+                            </div>
+                            </div>
+                        
+                            <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Imagem do card">
+                                <div class="card-body">
+                                <h4 class="card-title">Valores</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni debitis placeat aliquam, error itaque totam qui explicabo voluptatum harum eaque eius repellat vel praesentium quia quaerat laudantium necessitatibus excepturi dolores!</p>
+                                </div>
+                            </div>
+                            </div>
+                        
+                            <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Imagem do card">
+                                <div class="card-body">
+                                <h4 class="card-title">Missão</h4>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quis quasi commodi, dolores recusandae sapiente quas, sit facilis repudiandae architecto temporibus dolorem officiis laboriosam eligendi nulla perferendis. Modi, non itaque.</p>
+                                </div>
+                            </div>
+                            </div>
+                        
+                            <div class="col-lg-4 col-md-6 mb-4 d-none d-md-block">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Imagem do card">
+                                <div class="card-body">
+                                <h4 class="card-title">Visão</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque placeat quae odio accusantium quia! Non nihil illo id itaque! Asperiores, a esse. Eveniet, eius. Sed quasi itaque consectetur hic veniam.</p>
+                                </div>
+                            </div>
+                            </div>
+                        
+                            <div class="col-lg-4 col-md-6 mb-4 d-none d-lg-block">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Imagem do card">
+                                <div class="card-body">
+                                <h4 class="card-title">To sem ideia já</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, distinctio quia magni, culpa dolorum iste labore necessitatibus inventore eum sapiente fugiat praesentium impedit itaque cumque repellat deleniti aspernatur quasi amet.</p>
+                                </div>
+                            </div>
+                            </div>
+                        
+                            <div class="col-lg-4 col-md-6 mb-4 d-none d-lg-block">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Imagem do card">
+                                <div class="card-body">
+                                <h4 class="card-title">Acabou</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga repudiandae molestias nesciunt delectus. Aperiam animi ut voluptatibus. Sint laudantium eum quos libero earum saepe, temporibus explicabo sapiente perspiciatis? Accusamus, dignissimos!</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </section>
+            </div>
+        </main>
+
+        <div class="modal" id="exemplo-modal" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Login</h5>
+                        <button data-bs-dismiss="modal" type="button" class="btn-close" ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="d-flex flex-column">
+                            <label for="email">Seu E-mail:</label>
+                            <input type="email">
+                            <label for="senha">Sua senha:</label>
+                            <input type="text">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-bs-dismiss="modal" class="btn btn-danger">Cancelar</button>
+                        <button data-bs-dismiss="modal" class="btn btn-success">Seguir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="exemplo-modal2" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Cadastre-se</h5>
+                        <button data-bs-dismiss="modal" type="button" class="btn-close" ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="d-flex flex-column">
+                            <label for="email">Seu E-mail:</label>
+                            <input type="email">
+                            <label for="senha">Sua senha:</label>
+                            <input type="text">
+                            <label for="senha">Confime sua senha:</label>
+                            <input type="text">
+                            <label for="senha">Sua idade:</label>
+                            <input type="number">
+                            <div class="form-check">
+                                <label class="form-check-label" for="senha">Li e aceito os termos</label>
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-bs-dismiss="modal" class="btn btn-danger">Cancelar</button>
+                        <button data-bs-dismiss="modal" class="btn btn-success">Seguir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
